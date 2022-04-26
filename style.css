@@ -24,9 +24,6 @@ body {
   line-height:1;
   font-family: 'Montserrat', sans-serif;
 }
-/* body._lock {
-  overflow: hidden;
-} */
 
 .page {
   margin-top:104px; 
@@ -75,6 +72,10 @@ body {
   margin-top: 10px;
   display: none;
   font-size:16px;
+}
+.active_btn {
+  background-color:#BF0302 !important;
+  color:#fff !important;
 }
 
 /*-------------------------------- Header Style --------------------------------*/
@@ -233,8 +234,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+.agenda-btn__content {
+  padding:10px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
 .agenda-btn__body {
-  height:65%;
+  height:68%;
   width:100%;
   display: flex;
   flex-direction: column;
@@ -259,6 +266,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 14px;
 }
 .view-agenda__btn:hover {
   background-color: #BF0302;
@@ -444,7 +452,10 @@ body {
 
 .page__sponsors {
   background-color: #F6F1F1;
-  padding:55px 0px 88px 0px;
+  padding:55px 0px 43px 0px;
+}
+.content-block {
+  display:block;
 }
 .sponsors__title {
   margin-bottom:42px;
@@ -459,6 +470,7 @@ body {
 }
 .sponsors__item {
   width:calc(100% / 3 - 260px / 3);
+  margin-bottom:45px;
 }
 .sponsors__img {
   width:100%;
@@ -492,11 +504,10 @@ body {
 .page__partners {
   padding:83px 0px 103px 0px;
 }
-.partners {
-}
-.partners__container {
-}
-._container {
+.partners__item-block {
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .partners__title {
   margin-bottom:36px;
@@ -644,7 +655,7 @@ body {
   margin-bottom:14px;
 }
 .addres-block {
-  margin-right:15px;
+  margin-right:20px;
 }
 .addres-block .contacts-footer__item:not(:last-child){
   margin-bottom:32px;
@@ -661,7 +672,7 @@ body {
 }
 @media (max-width:1660px){
   .agenda-btn__body {
-    height:70%;
+    height:74%;
   }
 }
  
@@ -678,7 +689,7 @@ body {
     width: 90%;
   }
   .agenda-btn__body {
-    height:74%;
+    height:77%;
   }
 }
 
@@ -687,7 +698,7 @@ body {
     margin: 0px 25px 0px 0px;
   }
   .agenda-btn__body {
-    height:77%;
+    height:81%;
   }
 }
 @media(max-width:1024px) {
@@ -702,7 +713,7 @@ body {
 }
 @media (max-width:992px) {
   .agenda-btn__body {
-    height: 81%;
+    height: 86%;
   }
   .menu__icon {
     display:block;
@@ -810,11 +821,14 @@ body {
 
 @media (max-width:800px) {
   .agenda-btn__body {
-    height: 85%;
+    height: 93%;
   }
 }
 
 @media (max-width:768px) {
+  .view-agenda__btn {
+    border-radius:10px;
+  }
   .agenda-btn__body {
     height:100%;
     margin-bottom:36px;
@@ -882,7 +896,7 @@ body {
     margin-bottom: 8px;
   }
   .event__info {
-    max-height: 236px;
+    max-height: 100px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     overflow: hidden;
@@ -910,7 +924,7 @@ body {
     margin-bottom:20px;
   }
   .page__sponsors {
-    padding: 25px 0px 36px 0px;
+    padding: 25px 0px 0px 0px;
   }
   
   .partners__item:nth-of-type(2n) {
@@ -989,7 +1003,6 @@ body {
   .sponsors__title {
     margin-bottom: 25px;
   }
-
   .page__partners {
     padding: 30px 0px 50px 0px;
   }
@@ -1078,6 +1091,7 @@ body {
   .sponsors__item {
     width: calc(100% / 3 - 40px / 3);
   }
+
   .agenda-info__content {
     padding: 30px 15px 30px 15px;
    }  

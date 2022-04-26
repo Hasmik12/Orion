@@ -22,7 +22,7 @@
                     <nav class="header__menu menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link">About</a>
+                                <a href="#" data-goto=".event" class="menu__link">About</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" data-goto=".speakers" class="menu__link">Speakers</a>
@@ -31,16 +31,16 @@
                                 <a href="#" data-goto=".sponsors" class="menu__link">Sponsors</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Team</a>
+                                <a href="#"  data-goto=".partners" class="menu__link">Partners</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" data-goto=".location" class="menu__link">Location</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#"  class="menu__link">Agenda</a>
+                                <a href="#"  data-goto=".agenda-btn__content" class="menu__link agenda_link">Agenda</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Follow Us</a>
+                                <a href="#" data-goto=".footer" class="menu__link">Follow Us</a>
                             </li>
                         </ul>
                     </nav>
@@ -80,7 +80,9 @@
                                </div>
                                <div class="agenda-btn__block">
                                    <div class="agenda-btn__body">
-                                    <button class="view-agenda__btn" type="button">View agenda</button>
+                                       <div class="agenda-btn__content">
+                                            <button class="view-agenda__btn" type="button">View agenda</button>
+                                       </div>
                                    </div>
                                </div>
                              </div>
@@ -93,27 +95,27 @@
                          <div class="event__body">
                              <div class="event__info">
                                 <p>
-                                    Orion Worldwide Innovations (“Orion”), is a startup growth and ecosystem acceleration hub and offers a full-service package to 
-                                    make companies investable to enter the US market, enhance their customer acquisition strategies, stay competitive and protect their innovation.
-                                    Orion is a U.S.-based company formed in 2017, with offices in New York City, U.S., and Yerevan, Armenia locations and partnering with companies
-                                    and investor networks worldwide.
+                                    It is a one-of-a-kind international event bringing together globally recognized professionals from different industries, venture capitals, and Angel Investors. In addition,
+                                    founders of Armenian upcoming unicorn companies will share their success stories, growth plans, and the impact of their innovation on society. 
                                 </p>
                                 <p>
-                                  Orion’s business objectives encompass supporting innovations growth in Eastern Europe, Asia and Americas regions by establishing and/or
-                                  expanding business solutions, fundraising, growth strategy and IP management. We simplify the complexity and complications of growing businesses
-                                  in the U.S. market, acquisition and fundraising processes for both entrepreneurs and investors.
+                                    Orion Summit 2022 is a unique opportunity for local and international startup founders to learn more about the ecosystem, 
+                                    M&A opportunities, and meet new talent through BAJ Unicorn Academy graduates. 
                                 </p>
                                 <p>
                                     Orion’s business activities include assistance in fundraising, designing go-to-market strategy, obtaining IP protection and 
                                     acquiring businesses and IP intellectual assets to extract commercial value.
                                 </p>
-                                <p>Orion teams up with foreign and domestic investors, venture capitals (“VCs”), startups, and inventors.</p>
+                                <p>The Summit will introduce the new Digital Julfa Network initiative. New Julfa 300+ year old Armenian merchants' powerful network was running 
+                                    trade from the Indian Ocean to the Mediterranean region. 
+                                    Digital Julfa is its evolution at a global level, with innovation being the key driver. </p>
                              </div>
                              <span class="read-more d-none">reade more</span>
                              <div class="event__video">
                                 <div class="event__video-content">
-                                     <iframe src="https://www.youtube.com/embed/I3Q_-FfcPsM" title="YouTube video player" frameborder="0" allow="accelerometer; 
+                                     <iframe src="https://www.youtube.com/embed/UcMV9gGvZJ4" title="YouTube video player" frameborder="0" allow="accelerometer; 
                                      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                                     <div class="event__video-logo">
                                         <div class="event__logos">
                                             <img src="img/video-logo.svg" alt="logo">
@@ -134,9 +136,8 @@
                          <h1 class="speakers__title title">Speakers</h1>
                          <div class="speakers__body">
                              <p class="speakers__info">
-                                We have a large international network of innovative, technical, business and legal expertise. 
-                                We closely work with startups and established companies to create an environment in which the value of innovation and Intellectual 
-                                Property can produce optimal returns and growth; can become investable and grow exponentially toward their exit. 
+                                During Orion Summit 2022 you will have the chance to meet and hear from internationally recognized world-class founders, investors, advisors,
+                                and professionals in the fields of technology, finance, business, academia, trade, legal, art and music. 
                              </p>
                              <div class="speakers__items appear">
                                <div class="speakers__item speaker">
@@ -419,29 +420,35 @@
                          <h1 class="sponsors__title title">Sponsors</h1>
                          <div class="sponsors__body">
                              <div class="sponsors__list appear">
-                                 <div class="sponsors__item">
-                                     <div class="sponsors__img-block">
-                                        <div class="sponsors__img img-container">
-                                            <img src="img/speakers/img1.jpg">
-                                        </div>
-                                     </div>
-                                     <p class="sponsors__name">Company Name 1</p>
-                                 </div>
-                                 <div class="sponsors__item">
-                                    <div class="sponsors__img-block">
-                                       <div class="sponsors__img img-container">
-                                           <img src="img/speakers/img1.jpg">
-                                       </div>
-                                    </div>
-                                    <p class="sponsors__name">Company Name 2</p>
+                                <div class="sponsors__item">
+                                    <a href="#" class="sponsors__item-block  content-block">
+                                        <div class="sponsors__img-block">
+                                            <div class="sponsors__img img-container">
+                                                <img src="img/speakers/img1.jpg">
+                                            </div>
+                                         </div>
+                                         <p class="sponsors__name">Company Name 1</p>
+                                    </a>
                                 </div>
                                 <div class="sponsors__item">
-                                    <div class="sponsors__img-block">
-                                       <div class="sponsors__img img-container">
-                                           <img src="img/speakers/img1.jpg">
-                                       </div>
-                                    </div>
-                                    <p class="sponsors__name">Company Name 3</p>
+                                    <a href="#" class="sponsors__item-block  content-block">
+                                        <div class="sponsors__img-block">
+                                            <div class="sponsors__img img-container">
+                                                <img src="img/speakers/img1.jpg">
+                                            </div>
+                                         </div>
+                                         <p class="sponsors__name">Company Name 2</p>
+                                    </a>
+                                </div>
+                                <div class="sponsors__item">
+                                    <a href="#" class="sponsors__item-block content-block">
+                                        <div class="sponsors__img-block">
+                                            <div class="sponsors__img img-container">
+                                                <img src="img/speakers/img1.jpg">
+                                            </div>
+                                         </div>
+                                         <p class="sponsors__name">Company Name 3</p>
+                                    </a>
                                 </div>
                              </div>
                          </div>
@@ -453,40 +460,52 @@
                         <div class="partners__body">
                             <div class="partners__list appear">
                                 <div class="partners__item">
-                                    <div class="partners__img">
-                                        <img src="img/partners/img1.svg" alt="partner">
-                                    </div>
-                                    <p class="partners__name">E Works</p>
+                                    <a href="#" class="partners__item-block content-block">
+                                        <div class="partners__img">
+                                            <img src="img/partners/img1.svg" alt="partner">
+                                        </div>
+                                        <p class="partners__name">E Works</p>
+                                    </a>
                                 </div>
                                 <div class="partners__item">
-                                    <div class="partners__img">
-                                        <img src="img/partners/img2.svg" alt="partner">
-                                    </div>
-                                    <p class="partners__name">Virtlo</p>
+                                    <a href="#" class="partners__item-block content-block">
+                                        <div class="partners__img">
+                                            <img src="img/partners/img2.svg" alt="partner">
+                                        </div>
+                                        <p class="partners__name">Virtlo</p>
+                                    </a>
                                 </div>
                                 <div class="partners__item">
-                                    <div class="partners__img">
-                                        <img src="img/partners/img3.svg" alt="partner">
-                                    </div>
-                                    <p class="partners__name">Gallo & Darmanian</p>
+                                    <a href="#" class="partners__item-block content-block">
+                                        <div class="partners__img">
+                                            <img src="img/partners/img3.svg" alt="partner">
+                                        </div>
+                                        <p class="partners__name">Gallo & Darmanian</p>
+                                    </a>
                                 </div>
                                 <div class="partners__item">
-                                    <div class="partners__img">
-                                        <img src="img/partners/img4.svg" alt="partner">
-                                    </div>
-                                    <p class="partners__name">Jacobs Technion-Cornell</p>
+                                    <a href="#" class="partners__item-block content-block">
+                                        <div class="partners__img">
+                                            <img src="img/partners/img4.svg" alt="partner">
+                                        </div>
+                                        <p class="partners__name">Jacobs Technion-Cornell</p>
+                                    </a>
                                 </div>
                                 <div class="partners__item">
-                                    <div class="partners__img">
-                                        <img src="img/partners/img5.svg" alt="partner">
-                                    </div>
-                                    <p class="partners__name">Unicorn Lab</p>
+                                    <a href="#" class="partners__item-block content-block">
+                                        <div class="partners__img">
+                                            <img src="img/partners/img5.svg" alt="partner">
+                                        </div>
+                                        <p class="partners__name">Unicorn Lab</p>
+                                    </a>
                                 </div>
                                 <div class="partners__item">
-                                    <div class="partners__img">
-                                        <img src="img/partners/img6.svg" alt="partner">
-                                    </div>
-                                    <p class="partners__name">Bacc New York</p>
+                                    <a href="#" class="partners__item-block content-block">
+                                        <div class="partners__img">
+                                            <img src="img/partners/img6.svg" alt="partner">
+                                        </div>
+                                        <p class="partners__name">Bacc New York</p>
+                                    </a>
                                 </div>
                             </div>
                          </div>
@@ -501,8 +520,7 @@
                                 <div class="location__content img-container">
                                     <div class="mapouter">
                                         <div class="gmap_canvas">
-                                            <iframe  height="814" id="gmap_canvas" src="https://maps.google.com/maps?q=64%20Arami%20St.,%20Boulevard%20Plaza%20&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-
+                                            <iframe  height="814" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.7698992407!2d44.5186679153488!3d40.19193397939172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd20f0977ad9%3A0x7f2158e0bb6e6dd7!2zTWF0ZW5hZGFyYW4sINCc0LDRgtC10L3QsNC00LDRgNCw0L0!5e0!3m2!1sru!2s!4v1650801900543!5m2!1sru!2s" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                                             </iframe>
                                             <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a>
                                             <a href="https://www.embedgooglemap.net"></a>
@@ -536,7 +554,9 @@
                                     <img src="img/Social/map-pin.svg" alt="Addres"> 
                                     <p>
                                         <span class="item-map__country">Yerevan, Armenia</span>
-                                        <span class="item-map__street">64 Arami St., Boulevard Plaza </span>
+                                        <span class="item-map__street">
+                                            Matenadaran, 53 Mesrop Mashtots Ave
+                                        </span>
                                     </p>
                                    
                                 </li>
@@ -549,19 +569,19 @@
                         <div class="footer__contacts contacts-footer">
                             <ul class="contacts-footer__list">
                                 <li class="contacts-footer__item">
-                                    <a href="#">
+                                    <a href="https://www.facebook.com/orionarmenia" target="_blank">
                                         <img src="img/Social/facebook.svg" alt="Facebook">
                                         <span>Facebook</span>
                                     </a>
                                 </li>
                                 <li class="contacts-footer__item">
-                                    <a href="#">
+                                    <a href="https://www.linkedin.com/company/27203926/admin/" target="_blank">
                                         <img src="img/Social/linkedin.svg" alt="Linkedin">
                                         <span>LinkedIn</span> 
                                     </a>
                                 </li>
                                 <li class="contacts-footer__item">
-                                    <a href="#">
+                                    <a href="https://twitter.com/orion_worldwide" target="_blank">
                                         <img src="img/Social/twitter.svg" alt="Twitter">
                                         <span>Twitter</span>  
                                     </a>

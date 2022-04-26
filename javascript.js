@@ -148,3 +148,9 @@ if(menuLinks.length > 0 ) {
     }
 
 }
+const agendaLink = document.querySelector('.agenda_link');
+const agendaBtn = document.querySelector('.view-agenda__btn ');   
+agendaLink.addEventListener('click', function(e) {
+    agendaBtn.classList.add('active_btn');
+
+});
