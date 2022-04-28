@@ -450,15 +450,35 @@ body {
 
 /* -------------------- Sponsors section style ----------------------*/
 
-.page__sponsors {
-  background-color: #F6F1F1;
-  padding:55px 0px 43px 0px;
+.sponsors__content {
+  background-color: #F6F1F1; 
+  padding: 108px 0px 63px;
 }
 .content-block {
   display:block;
 }
 .sponsors__title {
-  margin-bottom:42px;
+  margin-bottom:72px;
+}
+.sponsors__categorise-block .sponsors__item {
+  margin-bottom:75px;
+}
+.sponsors__categorise-block {
+  margin-bottom:50px;
+}
+.categorise__title{
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 121%;
+  margin-bottom:63px;
+  text-align:center;
+  text-transform: uppercase;
+}
+.platinum {
+  justify-content: center;
+}
+.platinum .sponsors__item {
+  margin-right:0px !important;
 }
 
 .sponsors__list {
@@ -509,8 +529,20 @@ body {
   flex-direction: column;
   flex-grow: 1;
 }
+.partners-main__title {
+  font-size:36px;
+  font-weight:400;
+  margin-bottom:85px;
+}
+.coordinating__partner {
+  margin-bottom:50px;
+}
+.coordinating__title {
+  margin-bottom:90px;
+}
 .partners__title {
-  margin-bottom:36px;
+  margin-bottom:85px;
+  font-size:32px;
 }
 .partners__list {
   display:flex;
@@ -829,6 +861,36 @@ body {
   .view-agenda__btn {
     border-radius:10px;
   }
+  .coordinating__title {
+    margin-bottom:30px;
+  }
+  .partners-main__title {
+    margin-bottom:50px;
+    font-size:25px !important;
+  }
+  .sponsors__categorise-block .sponsors__item {
+    margin-bottom:30px;
+  }
+  .partners__img {
+    margin-bottom:10px;
+  }
+  .sponsors__categorise-block {
+    margin-bottom:20px;
+  }
+  .partners__title {
+    margin-bottom: 30px;
+  }
+  .sponsors__content {
+    padding: 30px 0px 6px;
+  }
+  .sponsors__title {
+    font-size:25px;
+    margin-bottom: 40px;
+  }
+  .categorise__title {
+    font-size:21px;
+    margin-bottom:26px;
+  }
   .agenda-btn__body {
     height:100%;
     margin-bottom:36px;
@@ -850,8 +912,10 @@ body {
     min-height:50px;
   }
   .page {
-
     margin-top:65px;
+  }
+  .partners__img {
+    padding:6px 8px;
   }
   .sticky .header__menu {
     top:49px;
@@ -923,10 +987,7 @@ body {
   .agenda__column:first-child {
     margin-bottom:20px;
   }
-  .page__sponsors {
-    padding: 25px 0px 0px 0px;
-  }
-  
+
   .partners__item:nth-of-type(2n) {
     margin-left: 13px;
   }
@@ -1000,9 +1061,6 @@ body {
   }
 
   /* sponsors section */
-  .sponsors__title {
-    margin-bottom: 25px;
-  }
   .page__partners {
     padding: 30px 0px 50px 0px;
   }

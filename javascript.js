@@ -4,6 +4,7 @@ const appear = document.querySelectorAll('.appear');
 
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 const header = document.querySelector('.header');
+const registerLink = document.querySelector('.registr-link');
 
 const cb = function(entries){
   entries.forEach(entry => {
@@ -21,21 +22,36 @@ for(let i =0 ;i< appear.length;i++){
     io.observe(appear[i]);
 }
 
+if (navigator.platform.indexOf("Android") != -1) {
+}
+if (navigator.platform.indexOf("win") != -1) {
+    registerLink.href="win";
+}
+
+
+var userAgent = navigator.userAgent.toLowerCase();
+var Android = userAgent.indexOf("android") > -1;
+var Ios = userAgent.indexOf("ios") > -1;
+if(Android) {
+    registerLink.href="https://play.google.com/store/apps/details?id=ai.scylla.faceticket";
+}
+if(Ios) {
+    registerLink.href="https://apps.apple.com/am/app/scylla-face-as-a-ticket/id1608857907";
+}
+
 
 
 const isMobile = {
     Android: function(){
         return navigator.userAgent.match(/Android/i);
     },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
+
     iOS: function() {
         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
     },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
+    // Opera: function() {
+    //     return navigator.userAgent.match(/Opera Mini/i);
+    // },
     Windows: function() {
         return navigator.userAgent.match(/IEMobile/i);
     },
